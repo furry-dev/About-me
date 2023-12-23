@@ -1,0 +1,114 @@
+@use "layout/header"
+@use "abstract/variables"
+@use "base/typography"
+@use "base/reset"
+@use "pages/home"
+
+p
+  margin-top: 15px
+
+a.focus-color
+  color: variables.$main-focus-color
+
+.flex-r
+  display: flex
+
+.flex-c
+  display: flex
+  flex-direction: column
+
+.flex-align-c-c
+  align-items: center
+  justify-content: center
+
+.flex-align-s-e
+  justify-content: space-evenly
+
+.devicon.invert
+  filter: invert(1)
+
+body
+  background-color: variables.$body-bgc
+
+main
+  display: flex
+  flex-direction: column
+
+  align-items: center
+
+  color: variables.$main-text-color
+
+  position: relative
+
+  section
+    width: 100%
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    position: relative
+
+    overflow: hidden
+
+    height: 100vh
+
+    .wrapper
+      width: 85%
+
+      max-width: variables.$wrapper-w
+
+      min-height: 100vh
+
+      padding: 30px 40px
+
+      margin-left: 30px
+
+      position: relative
+
+      flex: 1 1 auto
+
+      .timeline
+        width: 1px
+        height: 300%
+
+        position: absolute
+        left: -10px
+        top: 0
+        z-index: 9
+
+        background-color: #5918df
+
+        .bullet
+          height: 9px
+          width: 9px
+
+          background-color: rgb(21, 22, 23)
+
+          border-radius: 10px
+          border: 2px solid #5918df
+
+          position: absolute
+
+          top: 30px
+          left: -4px
+
+        .scroll-bottom
+          position: absolute
+          font-size: 16px
+          transform: translateX(calc(-50% + 16px)) rotate(-90deg)
+
+          top: 300px
+          left: -16px
+
+          white-space: nowrap
+
+          span
+            margin-left: 3px
+
+      .section-header
+        font-size: 18px
+        color: #988e9f
+        font-weight: 400
+
+        margin-top: -10px
