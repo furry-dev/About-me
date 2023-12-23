@@ -1,10 +1,333 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="dist/css/main.min.css">
+
+    <link rel="stylesheet" href="https://cdn.ruden.pro/libraries/fontawesome/css/all.min.css">
 </head>
 <body>
-$END$
+<header>
+    <div class="container">
+        <button id="header-menu-btn">
+            <span id="bar1" class="bar"></span>
+            <span id="bar2" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </button>
+        <div class="logo">
+            <a href="#hello" class="name">
+                Furry Dev
+            </a>
+        </div>
+        <nav class="pages">
+            <ul class="list">
+                <li class="item"><a href="#about" class="page-link">About me /></a></li>
+                <li class="item"><a href="#skills" class="page-link">Skills /></a></li>
+<!--                <li class="item"><a href="#projects" class="page-link">Projects /></a></li>-->
+                <li class="item"><a href="#contacts" class="page-link">Contacts /></a></li>
+            </ul>
+        </nav>
+        <ul class="social">
+            <li class="social-item"><a href="https://github.com/furry-dev/" class="fa-brands fa-github"></a></li>
+            <li class="social-item"><a href="https://t.me/Ruden_translator" class="fa-brands fa-telegram"></a></li>
+            <li class="social-item"><a href="https://discord.com/users/763818718131781673" class="fa-brands fa-discord"></a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="hello">
+        <a name="hello"></a>
+        <div class="wrapper">
+            <div class="timeline">
+                <div class="bullet"></div>
+                <a href="#about" aria-label="Go to next section" class="scroll-bottom">
+                    <i class="fa-solid fa-arrow-left"></i><span>SCROLL</span>
+                </a>
+            </div>
+            <h3 class="section-header">
+                Hello />
+            </h3>
+            <h1>
+                Привет, меня зовут <a class="focus-color">Руденко Максим</a><br>
+                Я <span class="what-i-can-do" id="what-i-can-do">создаю сайты</span>
+            </h1>
+            <p>
+                Давай покажу...
+            </p>
+        </div>
+    </section>
+    <section class="about-me">
+        <a name="about"></a>
+        <div class="wrapper flex-c">
+            <div class="timeline">
+                <div class="bullet"></div>
+            </div>
+            <h2 class="section-header">
+                About me />
+            </h2>
+            <div class="flex-r flex-align-c-c">
+                <div class="img">
+                    <img src="/assets/images/me.jpg" alt="me">
+                </div>
+                <div class="text">
+                    <p>
+                        Увлекаюсь программированием, особенно веб-разработкой, созданием десктопных приложений и изучении новых языков, таких как Rust.
+                    </p>
+                    <p>
+                        Мои разносторонние хобби включают в себя велоспорт, особенно люблю долгие поездки и фрирайд, а также обработку метала, интересуюсь сваркой, слесаркой, токаркой и фрезеровкой.
+                    </p>
+                    <p>
+                        В мире манги у меня есть комманда, которая занимается переводом с японского и английского, в планах создать эксклюзивный сайт для манг.
+                    </p>
+                    <p>
+                        Предпочитаю разрабатывать сайты без фреймворков, используя чистый код на TS/JS/PHP. Кроме того, у меня есть 3 сервера, два из которых подняты мной самостоятельно, и владею навыками работы с терминалом, особенно на операционной системе Ubuntu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <a name="skills"></a>
+        <div class="wrapper flex-c">
+            <div class="timeline">
+                <div class="bullet"></div>
+            </div>
+            <h2 class="section-header">
+                Skills />
+            </h2>
+            <div class="container flex-c flex-align-s-e">
+                <div class="skills-list languages flex-c">
+                    <h4 class="list-header">languages</h4>
+                    <ul>
+                        <li class="skills-card">
+                            html5
+                            <img src="" data-name="html5" alt="html5" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            css3
+                            <img src="" data-name="css3" alt="css3" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            c++
+                            <img src="" data-name="cplusplus" alt="c++" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            javascript
+                            <img src="" data-name="javascript" alt="javascript" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            nodejs
+                            <img src="" data-name="nodejs" alt="nodejs" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            php
+                            <img src="" data-name="php" alt="php" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            python
+                            <img src="" data-name="python" alt="python" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            rust
+                            <img src="" data-name="rust" data-type="plain" alt="rust" class="devicon invert">
+                        </li>
+                        <li class="skills-card">
+                            typescript
+                            <img src="" data-name="typescript" alt="typescript" class="devicon">
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-list frameworks flex-c">
+                    <h4 class="list-header">frameworks</h4>
+                    <ul>
+                        <li class="skills-card">
+                            express
+                            <img src="" data-name="express" alt="express" class="devicon invert">
+                        </li>
+                        <li class="skills-card">
+                            qt
+                            <img src="" data-name="qt" alt="qt" class="devicon">
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-list programs flex-c">
+                    <h4 class="list-header">programs</h4>
+                    <ul>
+                        <li class="skills-card">
+                            adobe
+                            <img src="" data-name="illustrator" data-type="plain" alt="illustrator" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            adobe
+                            <img src="" data-name="photoshop" data-type="plain" alt="photoshop" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            phpstorm
+                            <img src="" data-name="phpstorm" data-type="plain" alt="phpstorm" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            webstorm
+                            <img src="" data-name="webstorm" data-type="plain" alt="webstorm" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            pycharm
+                            <img src="" data-name="pycharm" data-type="plain" alt="pycharm" class="devicon">
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-list other flex-c">
+                    <h4 class="list-header">other</h4>
+                    <ul>
+                        <li class="skills-card">
+                            bash
+                            <img src="" data-name="bash" alt="bash" class="devicon invert">
+                        </li>
+                        <li class="skills-card">
+                            ssh
+                            <img src="" data-name="ssh" alt="ssh" class="devicon invert">
+                        </li>
+                        <li class="skills-card">
+                            docker
+                            <img src="" data-name="docker" alt="docker" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            github
+                            <img src="" data-name="github" alt="github" class="devicon invert">
+                        </li>
+                        <li class="skills-card">
+                            mysql
+                            <img src="" data-name="mysql" alt="mysql" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            sqlite
+                            <img src="" data-name="sqlite" alt="sqlite" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            ubuntu
+                            <img src="" data-name="ubuntu" data-type="plain" alt="ubuntu" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            nginx
+                            <img src="" data-name="nginx" alt="nginx" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            apache
+                            <img src="" data-name="apache" alt="apache" class="devicon">
+                        </li>
+                        <li class="skills-card">
+                            sass
+                            <img src="" data-name="sass" alt="sass" class="devicon">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <a name="contacts"></a>
+        <div class="wrapper flex-c">
+            <div class="timeline">
+                <div class="bullet"></div>
+            </div>
+            <h2 class="section-header">
+                Contacts />
+            </h2>
+            <div class="content">
+                <div class="contacts-list">
+                    <a href="https://github.com/furry-dev/"><i class="icon fa-brands fa-github"></i>Furry Dev<small>(work)</small></a>
+                    <a href="https://github.com/Ruden2007/"><i class="icon fa-brands fa-github"></i>Ruden2007<small>(education)</small></a>
+                    <a href="https://t.me/Ruden_translator"><i class="icon fa-brands fa-telegram"></i>Ruden_translator</a>
+                    <a href="https://discord.com/users/763818718131781673"><i class="icon fa-brands fa-discord"></i>ruden_max</a>
+                    <a href="https://www.instagram.com/rudenkomax20072017/"><i class="icon fa-brands fa-instagram"></i>rudenkomax20072017</a>
+                    <a href="mailto:admin@ruden.pro"><i class="icon fa-solid fa-envelope"></i>admin@ruden.pro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    Site made by <a href="https://github.com/furry-dev/" class="focus-color"><i class="icon fa-brands fa-github"></i>Furry Dev</a> 2023
+</footer>
+<script src="https://cdn.ruden.pro/libraries/AnimatedText/AnimatedText.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section')
+
+        let currentSectionIndex = localStorage.getItem('sectionIndex') || 0
+
+        window.addEventListener('wheel', (e) => {
+            scrollSection(e.deltaY)
+        })
+
+        let lastTouch = 0
+        let touchDeltaY = 0
+
+        window.addEventListener('touchstart', (e) => {
+            lastTouch = e.touches[0].clientY
+        })
+
+        window.addEventListener('touchmove', (e) => touchDeltaY = lastTouch - e.touches[0].clientY)
+
+        window.addEventListener('touchend', (e) => {
+            if (Math.abs(touchDeltaY) < 100) {
+                return scroll2section(currentSectionIndex)
+            }
+            scrollSection(touchDeltaY)
+        })
+
+        function scrollSection(deltaY) {
+            if (deltaY > 0 && currentSectionIndex < sections.length - 1) {
+                currentSectionIndex++
+            } else if (deltaY < 0 && currentSectionIndex > 0) {
+                currentSectionIndex--
+            }
+
+            scroll2section(currentSectionIndex)
+        }
+
+        function scroll2section(index) {
+            const currentSection = index === 0 ? document.body : sections[index]
+
+            currentSection.scrollIntoView({behavior: "smooth", block: "start"})
+
+            localStorage.setItem('sectionIndex', index.toString())
+        }
+
+        const el = document.getElementById('what-i-can-do')
+
+        const animator = new TextAnimator(el)
+
+        animator.setPhrases([
+            'создаю сайты',
+            'пишу десктопные приложения',
+            'интересуюсь обработкой метала',
+            'увлекаюсь велоспортом',
+            'перевожу манги'
+        ])
+
+        document.querySelectorAll('.devicon').forEach((el) => {
+            const type = el.dataset.type || "original"
+
+            el.src = `https://raw.githubusercontent.com/devicons/devicon/master/icons/${el.dataset.name}/${el.dataset.name}-${type}.svg`
+        })
+
+
+        document.querySelectorAll('header nav.pages .item').forEach((value, key) => {
+            value.style.transitionDelay = `${0.2 * (key)}s`
+        })
+
+        document.querySelector('#header-menu-btn').addEventListener('click', (e) => {
+            const button = e.target.closest('button')
+            button.classList.toggle('open')
+
+            document.querySelector('header nav.pages').classList.toggle('show')
+        })
+    })
+</script>
 </body>
 </html>
