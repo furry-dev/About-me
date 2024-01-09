@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Furry Dev — Portfolio</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="dist/css/main.min.css">
 
@@ -15,15 +15,23 @@
 <header>
     <div class="container">
         <button id="header-menu-btn">
-<!--            <span id="bar1" class="bar"></span>-->
-<!--            <span id="bar2" class="bar"></span>-->
-<!--            <span id="bar3" class="bar"></span>-->
+            <span id="bar1" class="bar"></span>
+            <span id="bar2" class="bar"></span>
+            <span id="bar3" class="bar"></span>
         </button>
         <div class="logo">
             <a href="#hello" class="name">
                 Furry Dev
             </a>
         </div>
+        <nav class="pages">
+            <ul class="list">
+                <li class="item"><a href="#about" class="page-link">About me /></a></li>
+                <li class="item"><a href="#skills" class="page-link">Skills /></a></li>
+<!--                <li class="item"><a href="#projects" class="page-link">Projects /></a></li>-->
+                <li class="item"><a href="#contacts" class="page-link">Contacts /></a></li>
+            </ul>
+        </nav>
         <ul class="social">
             <li class="social-item"><a href="https://github.com/furry-dev/" class="fa-brands fa-github"></a></li>
             <li class="social-item"><a href="https://t.me/Ruden_translator" class="fa-brands fa-telegram"></a></li>
@@ -284,9 +292,6 @@
 
         function scroll2section(index) {
             const currentSection = index === 0 ? document.body : sections[index]
-            // const scrollY = currentSection.getBoundingClientRect().top
-
-            // window.scrollBy({top: scrollY, behavior: "smooth"})
 
             currentSection.scrollIntoView({behavior: "smooth", block: "start"})
 
@@ -312,16 +317,16 @@
         })
 
 
-        // document.querySelectorAll('header nav.pages .item').forEach((value, key) => {
-        //     value.style.transitionDelay = `${0.2 * (key)}s`
-        // })
-        //
-        // document.querySelector('#header-menu-btn').addEventListener('click', (e) => {
-        //     const button = e.target.closest('button')
-        //     button.classList.toggle('open')
-        //
-        //     document.querySelector('header nav.pages').classList.toggle('show')
-        // })
+        document.querySelectorAll('header nav.pages .item').forEach((value, key) => {
+            value.style.transitionDelay = `${0.2 * (key)}s`
+        })
+
+        document.querySelector('#header-menu-btn').addEventListener('click', (e) => {
+            const button = e.target.closest('button')
+            button.classList.toggle('open')
+
+            document.querySelector('header nav.pages').classList.toggle('show')
+        })
     })
 </script>
 </body>
