@@ -293,6 +293,9 @@
         function scroll2section(index) {
             const currentSection = index === 0 ? document.body : sections[index]
 
+            // const scrollY = currentSection.getBoundingClientRect().top
+            // window.scrollBy({top: scrollY, behavior: "smooth"})
+
             currentSection.scrollIntoView({behavior: "smooth", block: "start"})
 
             localStorage.setItem('sectionIndex', index.toString())
